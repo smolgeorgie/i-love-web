@@ -154,11 +154,11 @@ ul li { scroll-snap-align: center; }```
 **Story → User Stories** : A Story can be further elaborated into multiple User Stories.
 
 ## **Example: Adding a Shopping Cart**
-**Epic**: Launch a new e-commerce website.
+**Epic**: Launch a new e-commerce website.<br>
 **Story**: Add a shopping cart.
 **<li>User Stories:</li>**
 <ul><li> As a visitor, I want to be able to add products to my shopping cart.</li>
-<li>As a visitor, I want to be able to remove products from my shopping cart.</li><
+<li>As a visitor, I want to be able to remove products from my shopping cart.</li>
 ... 
 </ul>
 <br>
