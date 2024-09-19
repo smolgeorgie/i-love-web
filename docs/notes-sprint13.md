@@ -26,19 +26,19 @@
 We're using Vercel or Netlify for hosting our application. These platforms offer convenient deployment and management features.
 
 ### **Project Structure**: 
-*Static folder*: Similar to the public folder in EJS, this folder contains static assets like images, CSS, and JavaScript files.
-*Src folder*: The main development directory where our application's code resides.
+**Static folder**: Similar to the public folder in EJS, this folder contains static assets like images, CSS, and JavaScript files.
+**Src folder**: The main development directory where our application's code resides.
 app.html: The main HTML file for the application. You can customize it for specific needs like adding global styles or meta tags.
 
 ### **SvelteKit Features**: 
-*Data-sveltekit-preload-data="hover"*: This attribute preloads the content of a linked page when the user hovers over the link, improving the user experience on desktop devices.
+**Data-sveltekit-preload-data="hover"**: This attribute preloads the content of a linked page when the user hovers over the link, improving the user experience on desktop devices.
 
 ### **Code Organization**: 
-*lib folder*: A dedicated folder for storing reusable components, promoting code organization and reusability.
+**lib folder**: A dedicated folder for storing reusable components, promoting code organization and reusability.
 
 ### **Additional Notes**:
-*Server-side rendering (SSR)*: We're starting without SSR for simplicity, but we can add it later if needed for performance or SEO benefits.
-*Component-based development*: SvelteKit encourages a component-based approach, making it easier to build modular and maintainable applications.
+**Server-side rendering (SSR)**: We're starting without SSR for simplicity, but we can add it later if needed for performance or SEO benefits.
+**Component-based development**: SvelteKit encourages a component-based approach, making it easier to build modular and maintainable applications.
 
 ## What's expected from us
 
@@ -93,7 +93,7 @@ creative coding = progressive enhancement = content first - content = html, serv
 
 ## **Creative Coding**
 
-*scroll-snap-type*: x-mandatory; locks scrolling horizontally, ensuring content snaps to predefined positions. This is a non-breaking enhancement. If someone has a browser that doesn't support this, they can still scroll normally, but they won't have the scroll snap effect.
+**scroll-snap-type**: x-mandatory; locks scrolling horizontally, ensuring content snaps to predefined positions. This is a non-breaking enhancement. If someone has a browser that doesn't support this, they can still scroll normally, but they won't have the scroll snap effect.
 
 **Tip**: 
 * Be sure to check the SvelteKit documentation, as not everything works the same way in SvelteKit as in plain CSS!
@@ -102,15 +102,94 @@ creative coding = progressive enhancement = content first - content = html, serv
 
 ## **CSS properties**: 
 
+```
 ul { scroll-snap-type: x mandatory; }
-ul li { scroll-snap-align: center; }
+ul li { scroll-snap-align: center; }```
+```
 
-@supports (animation-timeline: scroll ()) {
-ul li {
-view-timeline-name:
-view-timelines-axis:
-view-timeline-inset:
-animation-range: ]
+```css
+@supports (animation-timeline: scroll()) {
+  ul li {
+    view-timeline-name: "My Timeline";
+    view-timelines-axis: horizontal;
+    view-timeline-inset: 20px;
+    animation-range: 0s to 10s;
+  }
+}
+```
+
+==Do the SvelteKit tutorial. `-csr = false` turns off Client Side Rendering i.o.w Turns JavaScript off==
+
+# WORKING TOGETHER, PRIORITIES AND TIME MANAGEMENT
+
+## **Epics**
+**Definition**: Large, overarching work packages that represent a significant goal.Purpose:
+
+* Break down work into manageable chunks.
+* Deliver value to customers regularly.
+* Keep teams focused on a larger goal.
+
+**Examples**:
+* Launch a new e-commerce website.
+* Improve an existing website.
+* Implement augmented reality.
+
+## **Stories** 
+**Definition**: Smaller, more specific work packages that are part of an Epic.Purpose:
+
+* Further break down Epics into more concrete tasks.
+* Better plan and estimate work.Examples:
+* Add a shopping cart to an e-commerce website.
+* Make a website faster.
+
+## **User Stories**
+**Definition**: Descriptions of a feature from the end-user's perspective.
+
+**Purpose**:
+* Make requirements more concrete.
+* Ensure development stays focused on user needs.**Format**: As a [type of user], I want [goal], so that [reason]. **Example**: As a visitor, I want to be able to add products to my shopping cart, so that I can keep track of my purchases.
+
+## **Relationship between Epics, Stories, and User Stories**
+**Epic → Stories**: An Epic is broken down into multiple Stories.
+**Story → User Stories** : A Story can be further elaborated into multiple User Stories.
+
+## **Example: Adding a Shopping Cart**
+**Epic**: Launch a new e-commerce website.
+**Story**: Add a shopping cart.
+**<li>User Stories:</li>**
+<ul><li> As a visitor, I want to be able to add products to my shopping cart.</li>
+<li>As a visitor, I want to be able to remove products from my shopping cart.</li><
+... 
+</ul>
+<br>
+<li>Tasks:</li>
+<ul> <li> Create a database for the shopping cart.</li>
+<li> Design the shopping cart interface.</li>
+</ul>
+<br>
+
+**Visual**:
+```
+Codefragment<br>
+flowchart LR
+  A(Epic) --> B{Story}
+  B --> C{User Story}
+  C --> D{Task}
+  ```
+
+## **Planning Poker for time estimation**
+Consensus-based technique for estimating the effort required to complete a task. Planning Poker involves team members selecting a card that represents their estimate of the task's complexity. The team then discusses the estimates and repeats the process until a consensus is reached. This can variate per number, like 1, 2, 3, 5, 8, 13, 24, 40 etc. 
+
+## ** Prioritization Techniques**
+**MoSCoW Method**: Prioritizes tasks based on their importance and urgency. Tasks are categorized as Must-haves, Should-haves, Could-haves, and Won't-haves.
+
+## **Summary**
+By using Epics, Stories, and User Stories, teams can approach large projects in a structured and efficient manner. This approach ensures that all stakeholders have a clear understanding of what needs to be done and why.
+
+
+
+
+
 
 
 
