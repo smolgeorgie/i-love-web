@@ -1,6 +1,7 @@
 {
-  "name": "eleventy-sample",
+  "name": "i-love-web",
   "version": "1.0.0",
+  "description": "Learning Journal en Digital Gardening",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
@@ -9,9 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "type": "module",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
   }
 }
