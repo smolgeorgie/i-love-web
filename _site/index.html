@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <h1>Handcrafted 11ty Site</h1>
-  </header>
-  <main>
-    <article>
-      <p>My starter 11ty site. 11ty is great for blogs, portfolio's...</p>
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2022 Design 2 SEO</p>
-  </footer>
-</body>
+  <head>
+    <title>11ty Theme - by Design 2 SEO</title>
+<meta name="description" content="This is the home page description."> <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container--full page-header">
+	<div class="page-header--content">
+		<div class="logo">
+			<a href="/">Your Blog Name</a>
+		</div>
+		<nav class="primary-nav">
+			<ul role="list" class="nav-list flex-group">
+				<li role="listitem"><a href="/blog/">BLOG</a></li>
+				<li role="listitem"><a href="/about/">ABOUT</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+    <main>
+      
+<article>
+  <p>My starter 11ty site. 11ty is great for blogs, portfolio's...</p>
+</article>
+
+---
+layout: 'base.njk'
+title: Handcrafted 11ty Site
+tag: home-page
+---
+    </main>
+    <footer class="site-footer">
+	<section class="container col-three">
+		<div class="footer--social">
+			<a class="socials" href="#" target="_blank" aria-label="LinkedIn" rel="noopener"><span class="icon-social">LinkedIn</span></a>
+			<a class="socials" href="#" target="_blank" aria-label="Youtube" rel="noopener"><span class="icon-social" rel="noopener">YouTube</span></a>
+			<a class="socials" href="#" target="_blank" aria-label="Twitter" rel="noopener"><span class="icon-social">Twitter</span></a>
+		</div>
+		<div class="footer--menu">
+			<div class="sitemap">Sitemap:</div>
+			<ul class="menu-item">
+				<li><a href="/">Home</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p class="no-top">Your Blog Name © All Rights Reserved 2022</p>
+		</div>
+	</section>
+</footer>
+  </body>
 </html>

@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <header>
-{% include 'title-and-meta.njk' %}
-  </header>
-  <main>
-    {{ content | safe }}   
-  </main>
-  <footer>
-    <p>&copy; 2022 Design 2 SEO</p>
-  </footer>
-</body>
+  <head>
+    {% include 'title-and-meta.njk' %} <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    {% include 'header.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %}
+  </body>
 </html>
-
