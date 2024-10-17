@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11ty Theme - by Design 2 SEO</title>
-<meta name="description" content="This is the home page description.">
+    
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -22,16 +21,18 @@
 	</div>
 </header>
     <main>
-        
-<article>
-  <p>My starter 11ty site. 11ty is great for blogs, portfolio's...</p>
+        <section class="container blog">
+	<div class="post--bg col-three"><article class="grid">
+<div>
+	<a href="/blog/topic-one/first-post/"><img src="/assets/images/schapen-1.jpg" alt="" class="summary--image" width="1000" height="500"></a>
+	<p class="summary--title"><a href="/blog/topic-one/first-post/">Sprint 14 notes</a></p>
+</div>
+<span class="topic">
+	<a href="/blog/topic-one/" class="btn btn--primary">Topic One</a>
+</span>
 </article>
-
----
-layout: 'base.njk'
-title: Handcrafted 11ty Site
-tag: home-page
----
+	</div>
+</section>
     </main>
     <footer class="site-footer">
 	<section class="container col-three">

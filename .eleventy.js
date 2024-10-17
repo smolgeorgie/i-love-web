@@ -1,10 +1,20 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/style.css");
-  // Return your Object options:
-  return {
-    dir: {
-      input: "src", // default is "."
-      output: "_site", // default is "_site"
-    },
-  };
+import { DateTime } from "luxon";
+
+export default function(eleventyConfig) {
+
+//Pass through files
+eleventyConfig.addPassthroughCopy('./src/style.css');
+eleventyConfig.addPassthroughCopy('./src/assets');
+
+//Date Clean up
+eleventyConfig.addFilter("postDate", (dateObj) => {
+return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+});
+
+return {
+	dir: {
+		input: "src"
+	}
+}
+
 };

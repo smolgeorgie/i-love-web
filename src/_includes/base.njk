@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    {% include 'title-and-meta.njk' %} <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'title-and-meta.njk' %}
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
     {% include 'header.njk' %}
     <main>
-      {{ content | safe }}
+        {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
-  </body>
+</body>
 </html>

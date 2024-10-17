@@ -1,0 +1,8 @@
+{
+    "layout": "post.njk",
+    "author": "admin",
+    "tags": ["topicOnePosts", "blog"],
+    "tag": ["topic-one"],
+    "categorySlug": "topic-one/",
+    "categoryName": "Topic One"
+    }
