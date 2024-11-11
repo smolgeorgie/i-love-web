@@ -1,9 +1,66 @@
-<article class="grid">
-<div>
-	<a href="{{ post.url }}"><img src="{{ post.data.image }}" alt="" class="summary--image" width="1000" height="500"></a>
-	<p class="summary--title"><a href="{{ post.url }}">{{ post.data.title }}</a></p>
-</div>
-<span class="topic">
-	<a href="/blog/{{ post.data.categorySlug }}" class="btn btn--primary">{{ post.data.categoryName }}</a>
-</span>
+<article class="post-card">
+    <div class="post-image">
+        <a href="{{ post.url }}">
+            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="summary--image" width="1000" height="500">
+        </a>
+    </div>
+    <div class="post-content">
+        <p class="summary--title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </p>
+        <span class="topic">
+            <a href="/blog/{{ post.data.categorySlug }}" class="btn btn--primary">{{ post.data.categoryName }}</a>
+        </span>
+    </div>
 </article>
+
+<style>
+.post-card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 20px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+	margin-bottom: 2em;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary--title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.summary--title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.topic {
+    margin-top: 10px;
+}
+
+.btn--primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn--primary:hover {
+    background-color: #0056b3;
+}
+</style>
