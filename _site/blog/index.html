@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <header class="container--full page-header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <header class="container--full page-header">
 	<div class="page-header--content">
 		<div class="logo">
 			<a href="/"> I LOVE WEB </a>
@@ -60,143 +59,63 @@
 }
 </style>
 	
-    <main>
+        <main>
+            <article class="post-container">
+    <article class="post-card">
         <section class="container blog">
-	<div class="post--bg col-three"><article class="post-card">
-    <div class="post-image">
-        <a href="/blog/topic-one/first-post/">
+	<div class="post--bg col-three"><a href="/blog/topic-one/first-post/" class="post-card-link">
+    <article class="post-card">
+        <div class="post-image">
             <img src="/assets/images/schapen-1.jpg" alt="Sprint 14 notes" class="summary--image" width="1000" height="500">
-        </a>
-    </div>
-    <div class="post-content">
-        <p class="summary--title">
-            <a href="/blog/topic-one/first-post/">Sprint 14 notes</a>
-        </p>
-        <span class="topic">
-            <a href="/blog/topic-one/" class="btn btn--primary">Topic One</a>
-        </span>
-    </div>
-</article>
-
-<style>
-.post-card {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 20px;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-	margin-bottom: 2em;
-}
-
-.post-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.post-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.summary--title {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.summary--title a {
-    text-decoration: none;
-    color: #333;
-}
-
-.topic {
-    margin-top: 10px;
-}
-
-.btn--primary {
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn--primary:hover {
-    background-color: #0056b3;
-}
-</style><article class="post-card">
-    <div class="post-image">
-        <a href="/blog/topic-one/second.post/">
+        </div>
+        <div class="post-content">
+            <p class="summary--title">
+                Sprint 14 notes
+            </p>
+            <span class="topic">
+                Topic One
+            </span>
+        </div>
+    </article>
+</a><a href="/blog/topic-one/second.post/" class="post-card-link">
+    <article class="post-card">
+        <div class="post-image">
             <img src="/assets/images/schapen-1.jpg" alt="Sprint 15 notes" class="summary--image" width="1000" height="500">
-        </a>
-    </div>
-    <div class="post-content">
-        <p class="summary--title">
-            <a href="/blog/topic-one/second.post/">Sprint 15 notes</a>
-        </p>
-        <span class="topic">
-            <a href="/blog/topic-one/" class="btn btn--primary">Topic One</a>
-        </span>
-    </div>
-</article>
-
-<style>
-.post-card {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 20px;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-	margin-bottom: 2em;
-}
-
-.post-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.post-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.summary--title {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.summary--title a {
-    text-decoration: none;
-    color: #333;
-}
-
-.topic {
-    margin-top: 10px;
-}
-
-.btn--primary {
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn--primary:hover {
-    background-color: #0056b3;
-}
-</style>
+        </div>
+        <div class="post-content">
+            <p class="summary--title">
+                Sprint 15 notes
+            </p>
+            <span class="topic">
+                Topic One
+            </span>
+        </div>
+    </article>
+</a>
 	</div>
 </section>
-    </main>
-    <footer class="site-footer">
+    </article>
+    <article class="preview-card">
+        <h2>Preview Card</h2>
+        <p>Preview card content goes here.</p>
+    </article>
+</article>
+
+<style>
+    .preview-card {
+        background: red;
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .post-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 20px;
+    }
+</style>
+        </main>
+        <footer class="site-footer">
 	<section class="container col-three">
 		<div class="footer--social">
 			<a class="socials" href="#" target="_blank" aria-label="LinkedIn" rel="noopener"><span class="icon-social">LinkedIn</span></a>
@@ -216,5 +135,5 @@
 		</div>
 	</section>
 </footer>
-</body>
+    </body>
 </html>

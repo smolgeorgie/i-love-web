@@ -1,0 +1,57 @@
+.post-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: black;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.post-image {
+    flex: 0 0 40%;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.container-blog {
+    background: black;
+}
+
+.post-content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+.summary--title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.summary--title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.topic {
+    margin-top: 10px;
+}
+
+.btn--primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn--primary:hover {
+    background-color: #0056b3;
+}

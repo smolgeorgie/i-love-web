@@ -3,4 +3,26 @@ layout: 'base.njk'
 tag: blog-page
 eleventyExcludeFromCollections: true
 ---
-{% include 'category.njk' %}
+<article class="post-container">
+    <article class="post-card">
+        {% include 'category.njk' %}
+    </article>
+    <article class="preview-card">
+        <h2>Preview Card</h2>
+        <p>Preview card content goes here.</p>
+    </article>
+</article>
+
+<style>
+    .preview-card {
+        background: red;
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .post-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 20px;
+    }
+</style>
