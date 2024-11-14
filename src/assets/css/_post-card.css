@@ -7,6 +7,14 @@
     margin-top: 1rem;
 }
 
+.post-card-link {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-decoration: none;
+    color: inherit; 
+}
+
 .post-image {
     flex: 0 0 40%;
 }
@@ -31,17 +39,15 @@
 }
 
 .summary--title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
-}
-
-.summary--title a {
-    text-decoration: none;
     color: #333;
 }
 
 .topic {
     margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
 }
 
 .btn--primary {

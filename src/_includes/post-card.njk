@@ -1,5 +1,5 @@
-<a href="{{ post.url }}" class="post-card-link">
-    <article class="post-card">
+<article class="post-card">
+    <a href="{{ post.url }}" class="post-card-link">
         <div class="post-image">
             <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="summary--image" width="1000" height="500">
         </div>
@@ -7,9 +7,10 @@
             <p class="summary--title">
                 {{ post.data.title }}
             </p>
+            <span> {{post.data.date | postDate}} </span>
             <span class="topic">
                 {{ post.data.categoryName }}
             </span>
         </div>
-    </article>
-</a>
+    </a>
+</article>
