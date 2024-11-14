@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
-    margin-top: 1rem;
 }
 
 .post-card-link {
@@ -22,7 +21,7 @@
 .post-image img {
     width: 100%;
     height: 100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 }
 
 .container-blog {
@@ -39,7 +38,7 @@
 }
 
 .summary--title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     color: #333;
 }
