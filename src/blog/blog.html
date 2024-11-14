@@ -3,7 +3,8 @@ layout: 'base.njk'
 tag: blog-page
 eleventyExcludeFromCollections: true
 ---
-<article class="post-container">
+
+<div class="post-container">
     <article class="post-card">
         {% include 'category.njk' %}
     </article>
@@ -11,7 +12,7 @@ eleventyExcludeFromCollections: true
         <h2>Preview Card</h2>
         <p>Preview card content goes here.</p>
     </article>
-</article>
+</div>
 
 <style>
     .preview-card {
