@@ -3,9 +3,14 @@
     flex-direction: row;
     height: 12rem;
     border-radius: 10px;
-    background-color: white;
+    background-color: #03212c;
     overflow: hidden;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.post-card:hover {
+    border: solid rgb(107, 120, 184);
 }
 
 .post-card-link {
@@ -37,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: white;
+    background: transparent;
 }
 
 .summary--title {
