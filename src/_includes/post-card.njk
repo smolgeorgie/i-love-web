@@ -1,16 +1,18 @@
 <article class="post-card">
-    <div class="post-image">
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="summary--image" width="1000" height="500">
-    </div>
-    <div class="post-content">
-        <p class="summary--title">
-            {{ post.data.title }}
-        </p>
-        <span class="date">
-            {{post.data.date | postDate}}
-        </span>
-        <span class="topic">
-            {{ post.data.categoryName }}
-        </span>
-    </div>
+    <a href="{{ post.url }}" class="post-card-link">
+        <div class="post-image">
+            <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="summary--image" width="1000" height="500">
+        </div>
+        <div class="post-content">
+            <p class="summary--title">
+                {{ post.data.title }}
+            </p>
+            <span class="date">
+                {{post.data.date | postDate}}
+            </span>
+            <span class="topic">
+                {{ post.data.categoryName }}
+            </span>
+        </div>
+    </a>
 </article>

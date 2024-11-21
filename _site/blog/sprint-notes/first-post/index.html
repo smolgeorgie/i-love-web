@@ -1,75 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-    </head>
-    <body>
-        <header class="container--full page-header">
-	<div class="page-header--content">
-		<div class="logo">
-			<a href="/"> I LOVE WEB </a>
-		</div>
-		<nav class="primary-nav">
-			<ul role="list" class="nav-list flex-group">
-				<li role="listitem"><a href="/blog/">BLOG</a></li>
-				<li role="listitem"><a href="/about/">ABOUT</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
-
-<style>
-
-.logo {
-    padding: 1rem 0 1rem 1rem;
-}
-
-.logo a {
-    text-decoration: none;
-    color: white;
-}
-
-.primary-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-list {
-    height: 3rem;
-    width: 30rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    align-items: center;
-    border-radius: 25px;
-    background: white;
-	padding: 0 .5em 0 .5em;
-}
-
-.nav-list li {
-    list-style-type: none;
-}
-
-.nav-list a {
-    color: black;
-	text-decoration: none;
-}
-</style>
-	
-        <main>
-            <section class="container post">
-<h1 class="article--title">Sprint 14 notes</h1>
-<div class="author">By: <a href="/about/" title="Posts by admin" rel="author">Ilona van Oosbree</a> on 23 sep 2024</div>
-<article  class="post--bg">
-	<h1>FDND Programma</h1>
+<p><a href="/assets/images/schapen-1.jpg">schapen</a></p>
+<h1>FDND Programma</h1>
 <h2>Code Conventions</h2>
 <ul>
 <li>Inspringen van code met 1 tab</li>
@@ -116,26 +46,26 @@ In Static staan alle bestanden waar Sveltekit niks mee doet.</p>
 <ul>
 <li>+error.svelte bestand in je routes als je sveltekit nog overeind staat.</li>
 <li>
-<h1> Er gaat iets mis </h1> komt de tekst tevoorschijn als er iets fout gaat in jouw .svelte bestand.
+<h1> Er gaat iets mis </h1> komt de tekst tevoorschijn als er iets fout gaat in jouw .svelte bestand. 
 </li>
 <li>Je kan +layout.svelte nesten.</li>
 </ul>
-<pre><code class="language-html">&lt;header&gt;
-	&lt;h1&gt; Dit is een svelte project &lt;/h1&gt;
-&lt;/header&gt;
+<pre><code class="language-html">&lt;header&gt; 
+	&lt;h1&gt; Dit is een svelte project &lt;/h1&gt; 
+&lt;/header&gt; 
 
-&lt;main&gt;
-	&lt;/slot&gt;
+&lt;main&gt; 
+	&lt;/slot&gt; 
 &lt;/main&gt;
-
+ 
 &lt;footer&gt;
 	&lt;p&gt; Copyleft, all wrongs reversed &lt;/p&gt;
-&lt;/footer&gt;
+&lt;/footer&gt; 
 </code></pre>
 <ul>
 <li>Je kan dus +layout.svelte gebruiken voor goede layouts, maar ook om errors beter te herkennen.</li>
 </ul>
-<p><strong>To do</strong> (issue): Maak een error.svelte aan voor een error handling in Svelte.</p>
+<p><strong>To do</strong> (issue):  Maak een error.svelte aan voor een error handling in Svelte.</p>
 <h3>Loading data</h3>
 <p>Voor het laden van de data heb je async functie nodig voor de laadtijd van de data.</p>
 <p>export async function load() {
@@ -166,7 +96,10 @@ foo: 'bar'
 <hr>
 <h1>Design Critique - Dorien</h1>
 <h2>Dieter Rams</h2>
-<p>10 principes voor een goed design: 4. Good design makes a product understandable 8. Good design is thorough down to the last detail 10. Good design is as little design as possible</p>
+<p>10 principes voor een goed design:
+4. Good design makes a product understandable
+8. Good design is thorough down to the last detail
+10. Good design is as little design as possible</p>
 <p><strong>Indicator</strong>: 3.3.2</p>
 <hr>
 <h2>WE LOVE WEB Nicolas Garnier</h2>
@@ -189,53 +122,3 @@ Creative developer is a fancy term for dev with an eye for creativity. It uses a
 <li>Ask yourself what it brings and ask for feedback</li>
 <li>Be ready to spend a lot of time on it. Animations can take up a lot of hours.</li>
 </ul>
-
-</article>
-</section>
-        </main>
-        <footer class="site-footer">
-    <section class="container col-three">
-        <div class="footer--social">
-            <a class="socials" href="#" target="_blank" aria-label="LinkedIn" rel="noopener">
-                <span class="icon-social">LinkedIn</span>
-            </a>
-            <a class="socials" href="#" target="_blank" aria-label="Youtube" rel="noopener">
-                <span class="icon-social" rel="noopener">YouTube</span>
-            </a>
-            <a class="socials" href="#" target="_blank" aria-label="Twitter" rel="noopener">
-                <span class="icon-social">Twitter</span>
-            </a>
-        </div>
-        <div class="footer--menu">
-            <div class="sitemap">Sitemap:</div>
-            <ul class="menu-item">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/blog/">Blog</a>
-                </li>
-                <li>
-                    <a href="/about/">About</a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p class="no-top">Your Blog Name © All Rights Reserved 2024</p>
-        </div>
-    </section>
-</footer>
-<style>
-    .menu-item {
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-        list-style-type: none;
-    }
-    .menu-item a {
-        text-decoration: none;
-        color: lightgrey;
-    }
-</style>
-    </body>
-</html>

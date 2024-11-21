@@ -67,58 +67,86 @@
         <main>
             <section class="container blog">
 	<div class="post--bg col-three"><article class="post-card">
-    <div class="post-image">
-        <img src="/assets/images/schapen-1.jpg" alt="Sprint 14 notes" class="summary--image" width="1000" height="500">
-    </div>
-    <div class="post-content">
-        <p class="summary--title">
-            Sprint 14 notes
-        </p>
-        <span class="date">
-            23 sep 2024
-        </span>
-        <span class="topic">
-            Topic One
-        </span>
-    </div>
+    <a href="/blog/topic-one/first-post/" class="post-card-link">
+        <div class="post-image">
+            <img src="/assets/images/schapen-1.jpg" alt="Sprint 14 notes" class="summary--image" width="1000" height="500">
+        </div>
+        <div class="post-content">
+            <p class="summary--title">
+                Sprint 14 notes
+            </p>
+            <span class="date">
+                23 sep 2024
+            </span>
+            <span class="topic">
+                Sprints
+            </span>
+        </div>
+    </a>
 </article><article class="post-card">
-    <div class="post-image">
-        <img src="/assets/images/schapen-1.jpg" alt="Sprint 15 notes" class="summary--image" width="1000" height="500">
-    </div>
-    <div class="post-content">
-        <p class="summary--title">
-            Sprint 15 notes
-        </p>
-        <span class="date">
-            25 sep 2024
-        </span>
-        <span class="topic">
-            Topic One
-        </span>
-    </div>
+    <a href="/blog/topic-one/second-post/" class="post-card-link">
+        <div class="post-image">
+            <img src="/assets/images/schapen-1.jpg" alt="Sprint 15 notes" class="summary--image" width="1000" height="500">
+        </div>
+        <div class="post-content">
+            <p class="summary--title">
+                Sprint 15 notes
+            </p>
+            <span class="date">
+                25 sep 2024
+            </span>
+            <span class="topic">
+                Sprints
+            </span>
+        </div>
+    </a>
 </article>
 	</div>
 </section>
         </main>
         <footer class="site-footer">
-	<section class="container col-three">
-		<div class="footer--social">
-			<a class="socials" href="#" target="_blank" aria-label="LinkedIn" rel="noopener"><span class="icon-social">LinkedIn</span></a>
-			<a class="socials" href="#" target="_blank" aria-label="Youtube" rel="noopener"><span class="icon-social" rel="noopener">YouTube</span></a>
-			<a class="socials" href="#" target="_blank" aria-label="Twitter" rel="noopener"><span class="icon-social">Twitter</span></a>
-		</div>
-		<div class="footer--menu">
-			<div class="sitemap">Sitemap:</div>
-			<ul class="menu-item">
-				<li><a href="/">Home</a></li>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/about/">About</a></li>
-			</ul>
-		</div>
-		<div class="copyright">
-			<p class="no-top">Your Blog Name © All Rights Reserved 2024</p>
-		</div>
-	</section>
+    <section class="container col-three">
+        <div class="footer--social">
+            <a class="socials" href="#" target="_blank" aria-label="LinkedIn" rel="noopener">
+                <span class="icon-social">LinkedIn</span>
+            </a>
+            <a class="socials" href="#" target="_blank" aria-label="Youtube" rel="noopener">
+                <span class="icon-social" rel="noopener">YouTube</span>
+            </a>
+            <a class="socials" href="#" target="_blank" aria-label="Twitter" rel="noopener">
+                <span class="icon-social">Twitter</span>
+            </a>
+        </div>
+        <div class="footer--menu">
+            <div class="sitemap">Sitemap:</div>
+            <ul class="menu-item">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="no-top">Your Blog Name © All Rights Reserved 2024</p>
+        </div>
+    </section>
 </footer>
+<style>
+    .menu-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        list-style-type: none;
+    }
+    .menu-item a {
+        text-decoration: none;
+        color: lightgrey;
+    }
+</style>
     </body>
 </html>

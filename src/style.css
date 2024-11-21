@@ -28,6 +28,10 @@ body::before {
     opacity: 1;
 }
 
+main {
+    flex: 1;
+}
+
 
 h1 {
     font-size: 3em;
