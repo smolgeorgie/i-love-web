@@ -1,5 +1,6 @@
 @import url("/assets/css/_post-card.css");
 @import url("/assets/css/_recent-post.css");
+@import url("/assets/css/_biography.css");
 
 body {
     font-family: "Poppins", sans-serif;
@@ -29,6 +30,12 @@ body::before {
     opacity: 1;
 }
 
+.main-content {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 10rem;
+}
+
 h1.glow {
     font-size: 5em;
     text-transform: uppercase;
@@ -51,7 +58,7 @@ h1.glow {
 
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
     margin: 0;
     padding: 0;

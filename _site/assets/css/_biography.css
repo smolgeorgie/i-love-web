@@ -1,0 +1,23 @@
+.biography-block {
+    background-color: #03212c;
+    height: 100%;
+    width: 100%em;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: #2dd6f8 0px 0px 15px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    .profile-image {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
