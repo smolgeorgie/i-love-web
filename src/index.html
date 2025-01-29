@@ -3,7 +3,15 @@ layout: base.njk
 title: Home Page
 ---
 
-<h1> welcome to my i-love-web blog<h1>
+<main>
+
+<h1 class="glow">Welcome to my i-love-web blog</h1>
+
+<div class="post-blocks">
+    {% include 'recent-post.njk' %}
+</div>
+
+</main>
 
 <!-- ---
 layout: 'base.njk'

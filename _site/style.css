@@ -1,4 +1,5 @@
 @import url("/assets/css/_post-card.css");
+@import url("/assets/css/_recent-post.css");
 
 body {
     font-family: "Poppins", sans-serif;
@@ -28,12 +29,7 @@ body::before {
     opacity: 1;
 }
 
-main {
-    flex: 1;
-}
-
-
-h1 {
+h1.glow {
     font-size: 5em;
     text-transform: uppercase;
     max-width: 20ch;
