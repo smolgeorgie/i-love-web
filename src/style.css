@@ -9,8 +9,8 @@ body {
     height: 100vh;
     padding: 1rem 1rem 0 2rem;
     background-color: #00171f;
+    margin: 0 2rem 0 2rem;
     color: white;
-    padding: 0 10rem 0 10rem;
     position: relative;
 }
 
@@ -30,14 +30,12 @@ body::before {
     opacity: 1;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    gap: 10rem;
-}
+/* .main-content {
+    display: fle
+} */
 
 h1.glow {
-    font-size: 3em;
+    font-size: 5em;
     text-transform: uppercase;
     color: white;
     margin-top: 1em;
@@ -63,9 +61,35 @@ h2 {
     padding: 0;
 }
 
-@media (min-width: 900px) {
+.site-footer {
+    margin-top: 3em;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+}
+.menu-item a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+
+@media (min-width: 1100px) {
+    body {
+        padding: 0 10rem 0 10rem;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        gap: 10rem;
+    }
+
     h1.glow {
-        font-size: 5em;
+        font-size: 8em;
         max-width: 20ch;
         margin-top: 1.5em;
     }
