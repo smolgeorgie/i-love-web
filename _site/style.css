@@ -61,21 +61,6 @@ h2 {
     padding: 0;
 }
 
-.site-footer {
-    margin-top: 3em;
-}
-
-.menu-item {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    list-style-type: none;
-}
-.menu-item a {
-    text-decoration: none;
-    color: lightgrey;
-}
-
 
 @media (min-width: 1100px) {
     body {

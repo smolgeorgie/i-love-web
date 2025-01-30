@@ -13,9 +13,6 @@
     <body>
         <header class="container--full page-header">
 	<div class="page-header--content">
-		<div class="logo">
-			<a href="/"> I LOVE WEB </a>
-		</div>
 		<nav class="primary-nav">
 			<ul role="list" class="nav-list flex-group">
 				<li role="listitem"><a href="/blog/">BLOG</a></li>
@@ -26,15 +23,6 @@
 </header>
 
 <style>
-
-.logo {
-    padding: 1rem 0 1rem 1rem;
-}
-
-.logo a {
-    text-decoration: none;
-    color: white;
-}
 
 .primary-nav {
     display: flex;
@@ -52,6 +40,8 @@
     border-radius: 25px;
     background: white;
 	padding: 0 .5em 0 .5em;
+    margin-top: 2em;
+    font-weight: bold;
 }
 
 .nav-list li {
@@ -171,5 +161,24 @@ tag: home-page
         </div>
     </section>
 </footer>
+
+<style> 
+
+    .site-footer {
+    margin-top: 3em;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+}
+.menu-item a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+</style>
     </body>
 </html>
