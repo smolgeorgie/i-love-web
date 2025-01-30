@@ -37,11 +37,10 @@ body::before {
 }
 
 h1.glow {
-    font-size: 5em;
+    font-size: 3em;
     text-transform: uppercase;
-    max-width: 20ch;
     color: white;
-    margin-top: 1.5em;
+    margin-top: 1em;
     padding: 0;
     text-shadow: 0 0 5px #67b3c2, 0 0 10px #67b3c2, 0 0 20px #67b3c2, 0 0 40px #67b3c2, 0 0 80px #67b3c2;
     animation: glow 1.5s infinite alternate;
@@ -62,4 +61,12 @@ h2 {
     color: white;
     margin: 0;
     padding: 0;
+}
+
+@media (min-width: 900px) {
+    h1.glow {
+        font-size: 5em;
+        max-width: 20ch;
+        margin-top: 1.5em;
+    }
 }
