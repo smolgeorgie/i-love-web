@@ -16,13 +16,13 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    overflow: hidden;
 }
 
 .container--main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 h1 {
@@ -30,7 +30,8 @@ h1 {
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    font-size: 7.5rem;
+    /* font-size: 7.5em; */
+    font-size: clamp(3rem, 15vw, 7.5rem);
     font-weight: 700;
     margin: 0;
     color: #333;
@@ -52,8 +53,10 @@ h1 {
 
 .big-circle_1 {
     background-color: #e39249;
-    height: clamp(50rem, 100vw, 60rem); /* Minimum: 20rem, Preferred: 40vw, Maximum: 60rem */
-    width: clamp(50rem, 100vw, 60rem);  /* Keep it proportional */
+    height: clamp(50rem, 100vw, 60rem);
+    width: clamp(50rem, 100vw, 60rem);
+    min-width: 50rem;
+    min-height: 50rem;  
     border-radius: 50%; 
     z-index: 1; 
 }
