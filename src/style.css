@@ -13,6 +13,12 @@ body {
     color: white;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
 .container--main {
     display: flex;
     flex-direction: column;
@@ -45,10 +51,6 @@ h1 {
 }
 
 .big-circle_1 {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
     background-color: #e39249;
     height: 60rem; 
     width: 60rem; 
