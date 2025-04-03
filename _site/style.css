@@ -45,14 +45,15 @@ h1 {
 
 .animated-me {
     border-radius: 20px;
-    width: 30rem;
+    width: clamp(25rem, 55vw, 30rem);
+    height: auto;
     margin-top: 2rem;
 }
 
 .big-circle_1 {
     background-color: #e39249;
-    height: 60rem; 
-    width: 60rem; 
+    height: clamp(50rem, 100vw, 60rem); /* Minimum: 20rem, Preferred: 40vw, Maximum: 60rem */
+    width: clamp(50rem, 100vw, 60rem);  /* Keep it proportional */
     border-radius: 50%; 
     z-index: 1; 
 }
