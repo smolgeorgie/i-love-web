@@ -25,9 +25,14 @@
 <style>
 
 .primary-nav {
+    position: fixed;
+    top: 3%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -57,7 +62,7 @@
         <main>
             <section class="container post">
 <h1 class="article--title">Sprint 14 notes</h1>
-<div class="author">By: <a href="/about/" title="Posts by admin" rel="author">Ilona van Oosbree</a> on 23 sep 2024</div>
+<div class="author">By: <a href="/about/" title="Posts by admin" rel="author">Ilona van Oosbree</a> on 23 Sept 2024</div>
 <article  class="post--bg">
 	<h1>FDND Programma</h1>
 <h2>Code Conventions</h2>
@@ -216,8 +221,9 @@ Creative developer is a fancy term for dev with an eye for creativity. It uses a
 <style> 
 
     .site-footer {
-    margin-top: 3em;
-}
+    position: absolute;
+    bottom: 0;
+    margin-top: 3em 0 1em 0;
 
 .menu-item {
     display: flex;

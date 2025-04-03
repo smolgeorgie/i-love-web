@@ -25,9 +25,14 @@
 <style>
 
 .primary-nav {
+    position: fixed;
+    top: 3%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -69,7 +74,7 @@
                 Sprint 14 notes
             </p>
             <span class="date">
-                23 sep 2024
+                23 Sept 2024
             </span>
             <span class="topic">
                 Sprints
@@ -86,7 +91,7 @@
                 Sprint 15 notes
             </p>
             <span class="date">
-                25 sep 2024
+                25 Sept 2024
             </span>
             <span class="topic">
                 Sprints
@@ -157,8 +162,9 @@
 <style> 
 
     .site-footer {
-    margin-top: 3em;
-}
+    position: absolute;
+    bottom: 0;
+    margin-top: 3em 0 1em 0;
 
 .menu-item {
     display: flex;
