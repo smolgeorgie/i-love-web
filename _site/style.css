@@ -11,33 +11,35 @@ body {
     background-color: #eec382;
     margin: 0 2rem 0 2rem;
     color: white;
-    position: relative;
 }
 
 .container--main {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100vh;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
 h1 {
-    position: relative;
-    font-size: 10rem;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: 700;
+    margin: -.5em 0 0 0;
     color: #333;
 }
 
 .big-circle_1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 50%; /* Move to the vertical center */
+    left: 50%; /* Move to the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust to center the circle */
     background-color: #e39249;
-    height: 65rem;
-    width: 65rem;
-    border-radius: 50%;
+    height: 55rem; /* Keep the current size */
+    width: 55rem; /* Keep the current size */
+    border-radius: 50%; /* Make it circular */
+    z-index: 1; /* Place the circle behind the H1 */
 }
 
