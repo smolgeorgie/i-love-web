@@ -32,14 +32,14 @@ h1 {
 }
 
 .big-circle_1 {
-    position: absolute; /* Position relative to the nearest positioned ancestor */
-    top: 50%; /* Move to the vertical center */
-    left: 50%; /* Move to the horizontal center */
-    transform: translate(-50%, -50%); /* Adjust to center the circle */
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     background-color: #e39249;
-    height: 55rem; /* Keep the current size */
-    width: 55rem; /* Keep the current size */
-    border-radius: 50%; /* Make it circular */
-    z-index: 1; /* Place the circle behind the H1 */
+    height: 55rem; 
+    width: 55rem; 
+    border-radius: 50%; 
+    z-index: 1; 
 }
 
