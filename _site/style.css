@@ -21,10 +21,11 @@ main {
     overflow: hidden;
 }
 
-.container--main {
+.container--main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-top: 2rem;
 }
 
@@ -66,6 +67,29 @@ h1 {
 }
 
 .big-circle_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2.5rem;
 }
 
+.wavy-line {
+    position: relative;
+    text-align: center;
+}
+
+.wave-line_svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.wave-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none; /* Prevent interaction with the text */
+}
