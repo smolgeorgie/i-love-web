@@ -37,7 +37,7 @@
 
 .nav-list {
     height: 3rem;
-    width: 30rem;
+    width: clamp(20rem, 50vw, 30rem);
     display: flex;
     flex-direction: row;
     justify-content: space-around; 
@@ -54,7 +54,8 @@
 }
 
 .nav-list a {
-    color: black;
+    font-size: 1.2rem;
+    color: #333333;
 	text-decoration: none;
 }
 </style>
