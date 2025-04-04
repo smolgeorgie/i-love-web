@@ -18,15 +18,15 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 3.5rem;
-    overflow: hidden;
 }
 
-.container--main{
+.container--main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 2rem;
+    z-index: 2;
 }
 
 h1 {
@@ -56,40 +56,13 @@ h1 {
     margin-top: 2rem;
 }
 
-.big-circle_1, .big-circle_2 {
+.big-circle_1 {
     background-color: #e39249;
-    height: clamp(40rem, 110vw, 60rem);
-    width: clamp(40rem, 110vw, 60rem);
-    min-width: 40rem;
-    min-height: 40rem;  
-    border-radius: 50%; 
+    height: clamp(38em, 110vw, 60rem);
+    width: clamp(38rem, 110vw, 60rem);
+    min-width: 38rem;
+    min-height: 38rem;  
+    border-radius: 50% 50% 0 0; 
     z-index: 1; 
-}
-
-.big-circle_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.5rem;
-}
-
-.wavy-line {
-    position: relative;
-    text-align: center;
-}
-
-.wave-line_svg {
-    display: block;
-    margin: 0 auto;
-}
-
-.wave-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    color: #333;
-    pointer-events: none; /* Prevent interaction with the text */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* Large shadow */
 }
